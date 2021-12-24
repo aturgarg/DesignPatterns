@@ -1,4 +1,4 @@
-﻿using FactoryMethodDemo.ConcreteProducts;
+﻿using FactoryMethodDemo.ConcreteImpl;
 using FactoryMethodDemo.Creator;
 
 namespace FactoryMethodDemo.ConcreteCreator

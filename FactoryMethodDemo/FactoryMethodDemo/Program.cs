@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryMethodDemo.Enums;
+using System;
 
 namespace FactoryMethodDemo
 {
@@ -9,9 +10,11 @@ namespace FactoryMethodDemo
             var MoneyBack =CreditCards
                             .InitializeFactories()
                             .ExecuteCreation(CreditCardTypes.MoneyBack);
+
             var Platinum = CreditCards
                             .InitializeFactories()
                             .ExecuteCreation(CreditCardTypes.Platinum);
+
             var Titanium=  CreditCards
                             .InitializeFactories()
                             .ExecuteCreation(CreditCardTypes.Titanium);
@@ -30,6 +33,7 @@ namespace FactoryMethodDemo
             Console.WriteLine(Titanium.GetCardType());
             Console.WriteLine(Titanium.GetCreditLimit());
             Console.WriteLine(Titanium.GetAnnualCharge());
+
             Console.ReadLine();
         }
     }
