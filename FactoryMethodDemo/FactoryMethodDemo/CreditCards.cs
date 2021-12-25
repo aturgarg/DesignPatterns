@@ -1,4 +1,5 @@
 ﻿using FactoryMethodDemo.Creator;
+using FactoryMethodDemo.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,12 +30,5 @@ namespace FactoryMethodDemo
         public ICreditCard ExecuteCreation(CreditCardTypes creditCardTypes) => _factories[creditCardTypes].MakeCreditCard();
 
 
-    }
-
-    public enum CreditCardTypes
-    {
-        MoneyBack,
-        Platinum,
-        Titanium
-    }
+    }  
 }
